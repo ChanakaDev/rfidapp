@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_database/firebase_database.dart';
 
 class ListScreen extends StatelessWidget {
   const ListScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+
+    final Future<FirebaseApp> _firebaseApp = Firebase.initializeApp();
+
     final List<String> ids = <String>[
       'ID #111111',
       'ID #222222',

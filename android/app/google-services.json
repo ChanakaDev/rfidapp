@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "803368030956",
+    "firebase_url": "https://smart-rfid-door-lock-default-rtdb.firebaseio.com",
+    "project_id": "smart-rfid-door-lock",
+    "storage_bucket": "smart-rfid-door-lock.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:803368030956:android:5a44e16bc8f3ec17210bc9",
+        "android_client_info": {
+          "package_name": "com.example.rfidapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "803368030956-cm8hpe2n06a5e5apop8h330j3qbjmbgu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmjp7s-UQN90gy-IURjdrQWGojUCenUas"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "803368030956-cm8hpe2n06a5e5apop8h330j3qbjmbgu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
