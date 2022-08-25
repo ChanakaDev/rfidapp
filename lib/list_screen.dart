@@ -44,9 +44,11 @@ class _ListScreenState extends State<ListScreen> {
         children: [
           SafeArea(
             child: FirebaseAnimatedList(
+              defaultChild: const Center(
+                child: CircularProgressIndicator(),
+              ),
               itemBuilder: (BuildContext context, DataSnapshot snapshot,
                   Animation<double> animation, int index) {
-                print(snapshot.value.toString());
                 return Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
