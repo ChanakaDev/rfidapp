@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.rfidapp">
    <application
-        android:label="rfidapp"
+        android:label="Smart RFID Door Lock"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
