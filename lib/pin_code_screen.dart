@@ -48,15 +48,10 @@ class _PinCodeVerificationScreenState extends State<PinCodeVerificationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //backgroundColor: Colors.white,
       body: SizedBox(
-        // height: MediaQuery.of(context).size.height,
-        // width: MediaQuery.of(context).size.width,
-        child: ListView(
+        child: Column(
           children: <Widget>[
-            // const SizedBox(height: 30),
             SizedBox(
-              //height: MediaQuery.of(context).size.height / 3,
               width: double.infinity,
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(30),
@@ -221,7 +216,6 @@ class _PinCodeVerificationScreenState extends State<PinCodeVerificationScreen> {
           ],
         ),
       ),
-      //),
     );
   }
 }
