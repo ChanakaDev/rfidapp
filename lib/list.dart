@@ -46,6 +46,7 @@ class _ListScreenState extends State<ListScreen> {
             child: FirebaseAnimatedList(
               itemBuilder: (BuildContext context, DataSnapshot snapshot,
                   Animation<double> animation, int index) {
+                print(snapshot.value.toString());
                 return Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
@@ -67,13 +68,20 @@ class _ListScreenState extends State<ListScreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
-                            'ID: ${snapshot.value.toString()} - Mr. Sunil Herath',
-                            style: const TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 18.0,
-                                color: Color(0xff07143F)),
-                          ),
+                          snapshot.value.toString() == " 12 15 12 34"
+                              ? Text(
+                                  'ID: ${snapshot.value.toString()} - Mr. Sunil Herath',
+                                  style: const TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18.0,
+                                      color: Color(0xff07143F)),
+                                )
+                              : Text(
+                                  'ID: ${snapshot.value.toString()} - Mr. Saman Perera',
+                                  style: const TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18.0,
+                                      color: Color(0xff4B44C4))),
                           const SizedBox(
                             height: 8.0,
                           ),
